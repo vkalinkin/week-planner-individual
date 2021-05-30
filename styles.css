@@ -1,0 +1,72 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.column-seventh {
+  width: calc (100% / 7);
+}
+
+.day {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+.addEntry {
+  width: 160px;
+  height: 50px;
+  border: 2px solid black;
+  box-shadow: 10px 5px 5px black;
+}
+
+table {
+  width: 800px;
+}
+
+tr {
+  height: 20px;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+
+  /* align-content: center; */
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  background-color: white;
+  position: fixed;
+  top: 100px;
+}
+
+.drop-downs {
+  justify-content: flex-start;
+}
+
+.buttonRow {
+  justify-content: flex-end;
+}
+
+.hidden {
+  display: none;
+}

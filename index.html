@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row header">
+      <h1>Weekly Planner</h1>
+    </div>
+    <!-- <div class="row 7days">
+      <div class="column-seventh">
+        <a class="day">Sunday</a>
+      </div>
+      <div class="column-seventh">
+        <a class="day">Monday</a>
+      </div>
+      <div class="column-seventh">
+        <a class="day">Tuesday</a>
+      </div>
+      <div class="column-seventh">
+        <a class="day">Wednesday</a>
+      </div>
+      <div class="column-seventh">
+        <a class="day">Thursday</a>
+      </div>
+      <div class="column-seventh">
+        <a class="day">Friday</a>
+      </div>
+      <div class="column-seventh">
+        <a class="day">Saturday</a>
+      </div>
+    </div> -->
+    <div class="row sevenDays">
+      <div class="column-seventh">
+        <div class="day sundayBut">
+          <a>Sunday</a>
+        </div>
+      </div>
+      <div class="column-seventh">
+        <div class="day mondayBut">
+          <a>Monday</a>
+        </div>
+      </div>
+      <div class="column-seventh">
+        <div class="day tuesdayBut">
+          <a>Tuesday</a>
+        </div>
+      </div>
+      <div class="column-seventh">
+        <div class="day wednesdayBut">
+          <a>Wednesday</a>
+        </div>
+
+      </div>
+      <div class="column-seventh">
+        <div class="day thursdayBut">
+          <a>Thursday</a>
+        </div>
+      </div>
+      <div class="column-seventh">
+        <div class="day fridayBut">
+          <a>Friday</a>
+        </div>
+      </div>
+      <div class="column-seventh">
+        <div class="day saturdayBut">
+          <a>Saturday</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="addEntry">
+        <a class="add">Add Entry</a>
+      </div>
+    </div>
+    <div class="row">
+      <p>Scheduled Events for Monday</p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9:30</td>
+          <td>Dinner</td>
+        </tr>
+        <tr>
+          <td>600</td>
+          <td>dessert</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>test</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="modal hidden">
+      <div class = "modal-content">
+        <form>
+          <div class="row">
+            <h2>Add Entry</h2>
+          </div>
+          <div class="row drop-downs">
+            <div>
+              <select name = "day-drop-down" id= "day-select" required>
+                <option value="">Day of the Week</option>
+                <option value="Su">Sunday</option>
+                <option value="M">Monday</option>
+                <option value="Tu">Tuesday</option>
+                <option value="W">Wednesday</option>
+                <option value="Th">Thursday</option>
+                <option value="F">Friday</option>
+                <option value="Sa">Saturday</option>
+              </select>
+            </div>
+            <div>
+              <select name = "time-drop-down" id = "time-select" required>
+                <option value="">Time</option>
+                <option value="1">1:00 am</option>
+                <option value="2">2:00 am</option>
+                <option value="3">3:00 am</option>
+                <option value="4">4:00 am</option>
+                <option value="5">5:00 am</option>
+                <option value="6">6:00 am</option>
+                <option value="7">7:00 am</option>
+                <option value="8">8:00 am</option>
+                <option value="9">9:00 am</option>
+                <option value="10">10:00 am</option>
+                <option value="11">11:00 am</option>
+                <option value="12">12:00 pm</option>
+                <option value="13">1:00 pm</option>
+                <option value="14">2:00 pm</option>
+                <option value="15">3:00 pm</option>
+                <option value="16">4:00 pm</option>
+                <option value="17">5:00 pm</option>
+                <option value="18">6:00 pm</option>
+                <option value="19">7:00 pm</option>
+                <option value="20">8:00 pm</option>
+                <option value="21">9:00 pm</option>
+                <option value="22">10:00 pm</option>
+                <option value="23">11:00 pm</option>
+                <option value="24">12:00 am</option>
+              </select>
+            </div>
+          </div>
+          <div class="description-input row">
+            <textarea
+            id = "description"
+            name="description"
+            required
+            cols = "75"
+            rows = "8"
+            placeholder="Description"></textarea>
+          </div>
+          <div class="row buttonRow">
+            <button type="submit">Submit</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
